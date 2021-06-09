@@ -23,6 +23,8 @@ jobs:
           pip install cython==0.29.0 pytest
       - name: Build wheels
         run: |
+          pwd
+          ls
           ./python/build-wheel-manylinux2014.sh
 
   # Push image to Package Registry.
