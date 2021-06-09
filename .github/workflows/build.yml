@@ -1,4 +1,4 @@
-name: Python ra_synthesis_job build
+name: Ray build for Airflow
 
 on:
   push:
@@ -15,7 +15,6 @@ env:
 jobs:
   push:
     steps:
-      - uses: actions/checkout@v2
       - name: Setup
         uses: actions/setup-python@v1
         run: |
